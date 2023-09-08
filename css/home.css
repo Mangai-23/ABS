@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    overflow-x:hidden;
+}
+.row-1{
+    display: grid;
+    grid-template-columns: repeat(6,75px);
+    box-shadow:0 0 2px #000;
+    padding: 2px 2px 2px 2px;
+}
+#logo-72{
+    margin-top: 20px;
+    margin-right:15px;
+}
+#AddTodo
+{
+    max-width: 200px;
+    height: 45px;
+    width:50px;
+    display:flex;
+    position: absolute;
+    top: 0;
+    right:65px;
+    white-space: 3px;
+    padding-top: 15px;
+}
+#TodoExport
+{
+    max-width: 200px;
+    height: 45px;
+    width:50px;
+    display:flex;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    white-space: 3px;
+    padding-top: 15px;
+}
+.col2{
+    border-right: 2px solid gray;
+    margin-right:0px ;
+    margin-top: 15px;
+    height: 55px;
+}
+#todo-logo
+{
+    width:45px;
+    height:45px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.col-4{
+    margin-top: 20px;
+    margin-left:10px;
+}
+
+.todo-text{
+    width: 100px;
+    margin-top:13px;
+    font-size:15px;
+    position:absolute;
+}
+.overview {
+    font-size: 13px;
+    background-color: #f5f5f5; 
+    width: 105px;
+    margin-top:15px;
+    margin-left:80px;
+    position:absolute;
+    
+}
+/*main{
+    height:85vh;
+    background-color:#EBEBEB;
+}*/
+main {
+    
+    height: 85vh;
+    background-color: #EBEBEB;
+    overflow-x: hidden; /* Add this line to hide the overflow */
+}
+.side-bar
+{
+    height: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    width:60px;
+    margin-right: 5px;
+}
+#img-home
+{
+    margin-top:15px;
+    height: 40px;
+    margin-left:13px;
+    border-right: 3px solid #e60965df;
+}
+#img-con
+{
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 25px;
+
+}
+.row-2
+{
+    background-color:rgb(224,224,224);
+    padding:10px;
+    display:flex;
+    position:absolute;
+    margin-left: 60px;
+    justify-content: space-between;
+    align-items:center;
+    width: calc(100% - 80px);
+}
+
+.min-1 img{
+    height: 35px;
+    margin-right: 10px;
+    }
+
+.main-1{
+    height: 35px;
+    background-color:#eae6e6;
+    align-items: center;
+    padding: 1px;
+    width:15%;
+    margin-left: 30px;
+    margin-right:0px;
+}
+.add{
+    margin-top: -35px;
+    margin-left:40px;
+    padding-left:15px;
+}
+
+.line-1
+{
+    border: 1px solid gray;
+    height:40px;
+    margin-left:0px;
+}
+.search-bar
+{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    max-width:500px;
+    max-height:40px;
+    border-radius: 6px;
+    padding-right:15px;
+}
+#search-icon
+{
+    box-sizing: border-box;
+    padding: 0;
+    border:none;
+    margin: 20px;
+    display: block;
+    width:15px;
+    height:15px;
+}
+.search{
+    margin-right:7px;
+    border:none;
+    font-size:medium;
+    padding-right:75px;
+}
+.search-btn
+{
+    background-color:#e60965df;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.calendar
+{
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    max-width:200px;
+    width:150px;
+    border-radius:6px;
+    padding-right:10px;
+    padding: 5px;
+}
+#img-calc
+{
+    height: 30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#arrow
+{
+    height: 7px;
+    padding-left:5px;
+}
+.line-2
+{
+    border: 1px solid gray;
+    height:40px;
+    margin-left:0px;
+    margin-right:0px;
+}
+.task-comp
+{
+    margin-left:10px;
+    margin-right:45px;
+    font-size:large;
+}
+.card-first{
+    width:fit-content;
+    height: 23%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display:flex;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-bottom: 2px;
+    margin-right: 150px;
+}
+.card-content p {
+    font-size: 14px;
+    padding-top: 15px;
+    margin-right:0px;
+    margin-left: 20px;
+    width:75%;
+}
+.card-one{
+    width:fit-content;
+    height:23%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+}
+.title
+{
+    display:flex;
+    margin-top:15px;
+    margin-left:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#tasktodo
+{
+    height: 15px;
+    margin-right:10px;
+}
+.fr-txt{
+    text-decoration: line-through;
+    width:340px;
+    display: block;
+}
+.svg-path {
+    width: 20px; 
+    height: 10px;
+    margin-left: 15px;
+    margin-top:-5px;
+}
+#taskcomp
+{
+    height:20px;
+    margin-top:5px;
+}
+.svg-path .overview{
+    margin-top:-25px;
+    width: 100px;
+    max-width:200px;
+    max-height:35px;
+    border-radius:6px;
+    background-color:rgb(224,224,224);
+    position:absolute;
+    font-size: 14px; 
+    align-items:center;
+    padding:2px;
+    padding-left:5px;
+    margin-left:35px;
+}
+.finish
+{
+    margin-left:350px;
+    padding-right:10px;
+    font-weight:550;
+}
+.hrs
+{
+    border:none;
+    background-color: #eae6e6;
+    max-width:60px;
+    padding:3px;
+    font-weight:550;
+}
+.vl {
+    border-left: 0px solid;
+    height: 119px;
+    position:absolute;
+    left: 75%;
+    color:rgba(128, 128, 128, 0.514);
+    margin-top:15px;
+    margin-left:-20px;
+    top:25%;
+    border-style:dashed;
+}
+.vl1 
+{
+    border-left:0px solid;
+    height: 119px;
+    position:absolute;
+    left: 75%;
+    color:rgba(128, 128, 128, 0.514);
+    margin-top:30px;
+    margin-left:-20px;
+    top:44%;
+    border-style:dashed;
+}
+.vl2
+{
+    border-left: 0px solid;
+    height: 119px;
+    position:absolute;
+    left: 75%;
+    margin-top:45px;
+    color:rgba(128, 128, 128, 0.514);
+    margin-left:-20px;
+    border-style:dashed;
+    top:63%;
+}
+.right-bar
+{
+    padding:5px;
+}
+.date
+{
+    display: flex;
+    margin-top:10px;
+}
+#calendar
+{
+    height:15px;
+    margin-right:15px;
+}
+.cal-date
+{
+    width:70px;
+    border:none;
+}
+.time
+{
+    display: flex;
+    margin-top:20px;
+}
+#clock
+{
+    height:15px;
+    margin-right:15px;
+}
+.clk-time
+{
+    width:50px;
+    border:none;
+}
+.prior
+{
+    display:flex;
+    margin-top:15px;
+}
+#low-prior
+{
+    height:20px;
+    margin-right:10px;
+}
+.prior-set
+{
+    border:none;
+    margin-left:2px;
+}
+#edit
+{
+   height: 12px;
+   margin-top:15px;
+   right:175px;
+   position:absolute;
+
+}
+.dot-line
+{
+    height: 50px;
+    position:absolute;
+    border-style:dotted;
+    margin-left:5px;
+    border-left:0px solid ;
+    color:rgba(128, 128, 128, 0.514);
+    margin-top:30px;
+}
+#delete
+{
+    height:14px;
+    margin-top:90px;
+    margin-right:25px;
+    bottom:10px;
+}
+footer
+{
+    text-align: center;
+}
