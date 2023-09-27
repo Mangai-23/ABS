@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+    <div class="flex flex-row">
+        <img class="w-25 md:w-30 lg:w-45 m-3 ml-5 border-e-zinc-900" src="../image/logo.png">        
+        <div class="border border-gray mt-2 mb-2 lg:mb-2"></div>
+        <img class=" w-25 h-7 m-1 ml-2 mt-2 lg:m-3 lg:h-10 lg:w-10" src="../image/todo.jpg" alt="">
+        <p class="mt-4 text-xs lg:text-base lg:mt-5">TODO LIST</p>
+        <p class="my-4 mt-4 bg-gray-100 text-xs ml-2 lg:text-base lg:mt-5">/Over View Board</p>
+        <img class="w-10 h-12 md:w-12 md:h-14 lg:w-12 lg:h-16 ml-auto mr-2 lg:ml-auto lg:mr-2 pt-2 pb-2" src="../image/AddTodo.jpg" alt="logo">
+        <img class="w-10 h-12 md:w-12 md:h-14 lg:w-12 lg:h-16 lg:mr-2 pt-2 pb-2 mr-2" src="../image/TodoExport.jpg" alt="logo">
+    </div>
+    <hr>
+    </header>
+    <!--<main class="flex">
+        <div class="w-16 h-screen bg-red-100">
+            <img class="w-8 ml-1 mt-2 md:ml-2 md:w-10 lg:ml-4 lg:w-12" src="../image/home .jpg">
+            <img class="w-8 h-8 ml-4 mt-2" src="../image/content.jpg">
+        </div>
+        <div class="w-screen h-20 bg-green">
+        </div>
+        <div class ="h-48 bg-gray-100">
+            <div class="w-16 h-full bg-white"></div>
+        </div>
+    </main>-->
+    <main class="h-screen w-fit bg-gray-100">
+        <div class ="flex">
+            <div class="fixed w-12 md:w-16 lg:w-16 h-full bg-white">
+                <img class="w-10 ml-2 lg:ml-2 lg:w-12 pt-2" src="../image/home .jpg">
+                <img class="w-6 h-6 mt-2  ml-4 md:w-8 md:ml-4 lg:ml-4 md:h-8 lg:w-8 lg:h-8" src="../image/content.jpg" alt="">
+            </div>
+            <div class="flex h-14 bg-pink-100 ml-10 w-screen md:h-20 lg:h-20">
+                <div class="flex m-4 lg:ml-10 w-10 lg:w-44 md:w-32 h-10 bg-slate-50 rounded-sm">
+                    <img class="pl-1 w-12" src="../image/add.png">
+                    <span class="invisible lg:mt-1 lg:pr-4 lg:text-lg lg:visible">Add New Task</span>
+                </div>
+                <div class="border border-gray mt-4 mb-2 lg:mb-2 h-10"></div>
+                <div class="flex m-4 h-10 ml-4 rounded-md bg-white">
+                    <img class="w-4 h-4 m-4" src="../image/Search Icon.jpg">
+                    <input class="w-80" placeholder="Search projects...">
+                    <button class="pr-4 bg-pink-600 mr-4 rounded-md pl-4 mb-1 mt-1 text-white">Search</button>
+                </div>
+                <div class="flex m-4 bg-white rounded-md h-10">
+                    <img class="w-6 h-6 ml-2 mt-1" src="../image/todoCalender.jpg">
+                    <p class="mt-1 ml-2"><b>This month</b></p>
+                    <img class="w-2 h-2 mt-3 ml-2 mr-2" src="../image/todoDownArrow.jpg">
+                </div>
+                <div class="border border-gray mt-4 mb-2 lg:mb-2 h-10"></div>
+                <div class="m-5">
+                    <p class="text-xl">You've got 7 tasks coming up in the next days.</p>
+                </div>
+            </div>
+        </div>
+        <!--<div class ="h-48 md:h-56 lg:h-64  bg-gray-100">
+            <div class="w-10 lg:w-16 h-full bg-white"></div>
+        </div>-->
+        <div class="grid grid-cols-5 bg-white h-32 mt-3 overflow-scroll lg:overflow-hidden pl-4 lg:mt-5 lg:ml-32 rounded-lg w-[80%] lg:w-[83%]"> 
+            
+            <div class="col-span-4"> <!-- This column will take 80% of the width -->
+                <div class="flex">
+                    <img class="w-4 h-4 mt-4 mr-2" src="../image/check.png">
+                    <p class="font-sans lg:text-42 mt-4 focus:outline-none w-[100%] font-extrabold text-[#409E0A]">App Design API User Case Work</p> 
+                </div>
+                <span class="mr-[20%] mt-4"><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
+            </div>
+            <div class="col-span-1 lg:flex  border-s border-dashed "> <!-- This column will take 20% of the width -->
+              <!-- Content for the 20% width column -->
+              <div class="ml-12 mt-4">
+                <div class=" mr-32 flex">
+                    <img src="../image/todoCalender.jpg" alt="date" class="w-4 h-4 ">
+                    <p class="ml-2 ">24/10/2022</p>
+                    <img src="../image/edit.png" alt="pencil" class="w-4 h-4 ml-8">
+                </div>
+                <div class="flex">
+                    <img src="../image/clock.png" alt="clock" class="w-4 h-4 mt-3">
+                    <p class="ml-2 w-4 h-4 m-2">18:30</p>
+                </div>
+                <div class="flex">
+                <div class="border2dotgray border2dotgray2"></div>
+                    <img src="../image/low.png" alt="tick" class="w-4 h-4 mt-2">
+                    <p class="pl-2 mt-1">Low Priority</p>
+                    <img src="../image/delete.png" alt="delete" class="w-4 h-4 ml-8 mt-2">
+                </div>
+            </div>
+            </div>
+        </div>        
+    </main>
+    <!--<div class="h-32 mt-3 overflow-scroll lg:overflow-hidden lg:mt-5 rounded-lg w-[80%] lg:w-[83%] pl-4 bg-white ml-14 lg:ml-32 lg:mr-32 grid grid-cols-2">
+            <div class="">
+                <div class="flex">
+                    <img class="w-4 h-4 mt-4 mr-2" src="../image/check.png">
+                    <h3 class="text-lg mt-2">App Design API User Case Work</h3> 
+                </div>
+                <span class="mr-[20%] mt-4"><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
+            </div>
+            <div class="lg:flex  border-s border-dashed ml-96">            
+                <div class="ml-12 mt-4">
+                    <div class=" mr-32 flex">
+                        <img src="../image/todoCalender.jpg" alt="date" class="w-4 h-4 ">
+                        <p class="ml-2 ">24/10/2022</p>
+                        <img src="../image/edit.png" alt="pencil" class="w-4 h-4 ml-8">
+                    </div>
+                    <div class="flex">
+                        <img src="../image/clock.png" alt="clock" class="w-4 h-4 mt-3">
+                        <p class="ml-2 w-4 h-4 m-2">18:30</p>
+                    </div>
+                    <div class="flex">
+                    <div class="border2dotgray border2dotgray2"></div>
+                        <img src="../image/low.png" alt="tick" class="w-4 h-4 mt-2">
+                        <p class="pl-2 mt-1">Low Priority</p>
+                        <img src="../image/delete.png" alt="delete" class="w-4 h-4 ml-8 mt-2">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--<div class="lg:hidden grid grid-cols- bg-white h-36 mt-3 overflow-scroll lg:overflow-hidden pl-4 lg:mt-5 lg:ml-36 rounded-lg w-[80%] lg:w-[75%] ml-14">   
+            <div class="col-span-3">
+                <div class="flex mb-2">
+                    <img class="w-4 h-4 mt-4 mr-2" src="../image/check.png">
+                    <h3 class="text-lg mt-2">App Design API User Case Work</h3> 
+                    <div class="flex  ml-6">
+                        <img class="w-5 h-5 mt-3" src="../image/taskComp.png" alt="taskcomp">
+                        <div class="pl-2 mt-2 bg-gray-100">#Development</div>
+                    </div>
+                    <div class="timing">
+                        <span class="finish" style="color: #1e991cf3;">*Finished in:</span>
+                        <input value="02:00 Hrs" name="finishedIn" class="hrs" style="color:#1e991cf3">
+                    </div>
+                </div>
+                <span class="flow-root mr-[20%]"><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
+            </div>
+            <div class="col-span-1 lg:flex lg:border-s border-dashed mr-12">
+              <div class="ml-12 mt-4">
+                <div class=" mr-32 flex">
+                    <img src="../image/todoCalender.jpg" alt="date" class="w-4 h-4 mt-1">
+                    <p class="ml-2">24/10/2022</p>
+                    <img src="../image/edit.png" alt="pencil" class="w-4 h-4 ml-12">
+                </div>
+                <div class="flex border-r-2 border-dashed w-40 mt-2">
+                    <img src="../image/clock.png" alt="clock" class="w-4 h-4 mt-3">
+                    <p class="ml-2 w-4 h-6 m-2">18:30</p>
+                </div>
+                <div class="flex">
+                <div class="border2dotgray border2dotgray2"></div>
+                    <img src="../image/low.png" alt="tick" class="w-4 h-4 mt-2">
+                    <p class="pl-2 mt-1">Low Priority</p>
+                    <img src="../image/delete.png" alt="delete" class="w-4 h-4 ml-12 mt-2">
+                </div>
+            </div>
+            </div>
+        </div> 
+        <div class="grid lg:grid-cols-4 bg-white h-36 mt-3 overflow-scroll lg:overflow-hidden pl-4 lg:mt-5 lg:ml-36 rounded-lg w-[80%] lg:w-[75%] ml-14">   
+            <div class="col-span-3">
+                <div class="flex mb-2">
+                    <img class="w-4 h-4 mt-4 mr-2" src="../image/check.png">
+                    <h3 class="text-lg mt-2">App Design API User Case Work</h3> 
+                    <div class="flex  ml-6">
+                        <img class="w-5 h-5 mt-3" src="../image/taskComp.png" alt="taskcomp">
+                        <div class="pl-2 mt-2 bg-gray-100">#Development</div>
+                    </div>
+                    <div class="timing">
+                        <span class="finish" style="color: #1e991cf3;">*Finished in:</span>
+                        <input value="02:00 Hrs" name="finishedIn" class="hrs" style="color:#1e991cf3">
+                    </div>
+                </div>
+                <span class="flow-root mr-[20%]"><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
+            </div>
+            <div class="col-span-1 lg:flex lg:border-s border-dashed mr-12">
+              <div class="ml-12 mt-4">
+                <div class=" mr-32 flex">
+                    <img src="../image/todoCalender.jpg" alt="date" class="w-4 h-4 mt-1">
+                    <p class="ml-2">24/10/2022</p>
+                    <img src="../image/edit.png" alt="pencil" class="w-4 h-4 ml-12">
+                </div>
+                <div class="flex border-r-2 border-dashed w-40 mt-2">
+                    <img src="../image/clock.png" alt="clock" class="w-4 h-4 mt-3">
+                    <p class="ml-2 w-4 h-6 m-2">18:30</p>
+                </div>
+                <div class="flex">
+                <div class="border2dotgray border2dotgray2"></div>
+                    <img src="../image/low.png" alt="tick" class="w-4 h-4 mt-2">
+                    <p class="pl-2 mt-1">Low Priority</p>
+                    <img src="../image/delete.png" alt="delete" class="w-4 h-4 ml-12 mt-2">
+                </div>
+            </div>
+            </div>
+        </div> -->
+    <footer>
+        <div class=" fixed bottom-0 left-0 mt-0.5  h-12 bg-white w-screen ">
+            <p class="text-xs lg:text-base text-center mt-2">&copy; 2022,Alpha Bussiness Solutions Pvt Ltd.All Rights Reserved</p>
+        </div>
+    </footer>
