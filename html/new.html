@@ -9,17 +9,47 @@
     </head>
     <body>
         <header>
-            <div class="head">
-            <img src="https://www.72businesstools.com/images/72BT%20Logo.png" class="logo">
-            <img src="https://www.72businesstools.com/icons/lineIcon.svg" class="line">
-            <img src="Images/img1.jpeg" class="img1">
-            <p class="todo">TODO List</p>
-            <p class="overview">/OverView Board</p>
-           <div class="image">
-           <img src="https://www.72businesstools.com/icons/AddTodo.svg" class="one">
-           <img src="https://www.72businesstools.com/icons/TodoExport.svg" class="two">
-        </div>
-        </div>
+                <div class="grid grid-cols-6 gap-2 divide-x-3">
+                    <!-- for 72 logo  -->
+                        <img class="w-45 md:w-30 lg:w-45 m-3 ml-5 " src="../image/logo.png">
+                    <!-- for line  -->
+                    <div class="border-l-indigo-500"></div> 
+                    <!-- for todo logo  -->
+                    <img class="w-45 md:w-30 lg:w-45 m-3 ml-5 " src="../image/todo.jpg" alt="logo1">
+                    <!-- for todo text  -->
+                    <div class="col-4">
+                        <b><p class="todo-text">TODO List</p></b>
+                        <b><p class="overview">/OverView Board</p></b>
+                    </div>
+                    <div class="col-5">
+                        <img id="AddTodo" src="https://www.72businesstools.com/icons/AddTodo.svg">
+                    </div>
+                    <div class="col-6">
+                        <img id="TodoExport" src="https://www.72businesstools.com/icons/TodoExport.svg" >
+                    </div>
+                </div>
+                <header class="pl-5 p-1 flex items-center">
+                    <div class="box-border inline-block overflow-hidden w-auto h-auto bg-transparent opacity-100 border-0 m-0 p-0 relative max-w-full">
+                        <div class="box-border block w-auto h-auto bg-transparent opacity-100 border-0 m-0 p-0 max-w-full">
+                            <img class="block max-w-full w-auto h-auto bg-transparent opacity-100 border-0 m-0 p-0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2784%27%20height=%2735%27/%3e">
+                        </div>
+                        <img alt="btLogo" src="../image/logo.png" class="cursor-pointer absolute top-0 left-0 bottom-0 right-0 box-border p-0 border-0 m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full">
+                    </div>        
+                    <div class="m-[0_10px] flex items-center">
+                        <div class="box-border inline-block overflow-hidden w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 relative max-w-full">
+                            <div class="box-border block w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 max-w-full">
+                                <img class="block max-w-full w-auto h-auto bg-none opacity-100 border-0 m-0 p-0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2712%27%20height=%2732%27/%3e">
+                            </div>
+                            <img alt="btLineLogo" src="../image/lineIcon.jpg" class="absolute top-0 left-0 bottom-0 right-0 box-border box-content p-0 border-0 mx-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full">
+                        </div>
+                    </div>
+                    <span class="border-0 m-0 p-0 relative max-w-full">
+                        <span class="box-border block w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 max-w-full">
+                            <img class="block max-w-full w-auto h-auto bg-none opacity-100 border-0 m-0 p-0" alt="addtodo" src="../image/AddTodo.jpg">
+                        </span>
+                        <img alt="appLogo" src="../image/TodoExport.jpg" class="absolute top-0 left-0 bottom-0 right-0 box-border p-0 border-0 m-auto block w-0 h-0 min-w-full max-w-full min-h-4px max-h-full">
+                    </span>
+                </header>
         </header>
         <div class="sidebar">
             <img src="Images/home.jpeg" id="home">
