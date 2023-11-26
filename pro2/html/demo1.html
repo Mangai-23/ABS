@@ -23,9 +23,9 @@
     <main class="h-screen fixed w-fit bg-gray-100">
         <div class ="flex">
             <div class="fixed w-12 lg:w-16 h-full bg-white">
-                <div class="flex ">
-                    <img class="w-10 ml-2 lg:ml-2 lg:w-14 lg:h-12 pt-2 " src="../image/home .jpg">
-                    <div class="mt-2 h-9 border-r-4 border-pink-500"></div>
+                <div class="flex">
+                    <img class="w-10 ml-1 lg:ml-2 lg:w-14 lg:h-12 pt-2 " src="../image/home .jpg">
+                    <div class="mt-3 h-7 lg:h-8 border-r-4 border-pink-500"></div>
                 </div>
                 <img class="w-6 h-6 mt-2 ml-4 lg:ml-4 lg:w-8 lg:h-8" src="../image/content.jpg" alt="">
             </div>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="hidden lg:block border border-gray mt-4 mb-2 lg:mb-2 h-10"></div>
                 <div class="hidden lg:m-3 md:block lg:block">
-                    <p class="text-lg md:mt-4 md:ml-4">You've got 7 tasks coming up in the next days.</p>
+                    <p class="text-lg md:mt-4 md:ml-4">You've got <span class="text-pink-500 font-bold">7</span> tasks coming up in the next days.</p>
                 </div>
             </div>
         </div>
@@ -167,19 +167,19 @@
             </div>
         </div> 
         <!--Code for Small Screen-->
-        <div class="lg:hidden font-sans bg-white h-36 mt-3 overflow-scroll pl-4 rounded-lg w-[75%] ml-14">   
+        <div class="lg:hidden font-sans bg-white h-36 mt-3 overflow-scroll pl-4 rounded-lg w-[75%] ml-14 md:ml-24">   
             <div class="mb-2 mt-3 mb-2 border-b border-dashed border-gray-500">
                 <div class="flex mb-2">
                     <img class="w-4 h-4 mt-1 mr-2" src="../image/check.png">
                     <h3 class="">App Design API User Case Work</h3> 
-                    <img src="../image/edit.png" alt="pencil" class="block md:hidden w-4 h-4 ml-10 mt-1">
+                    <img src="../image/edit.png" alt="pencil" class="hidden w-4 h-4 ml-10 mt-1">
                 </div>
-                <span class=""><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
+                <span class="text-justify"><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
                 <div class="flex">
                     <img class="w-5 h-5 mt-1" src="../image/taskComp.png" alt="taskcomp">
                     <div class="pl-2 mt-0.5 h-6 pr-2 text-[#409E0A]">#Development</div>
-                    <div class="flex mt-1 mb-2 text-[#409E0A] ml-4 md:ml-60">
-                        <span class="ml-4">*Finished in:</span>
+                    <div class="flex mt-1 mb-2 text-[#409E0A] md:ml-64">
+                        <span class="md:ml-4">*Finished in:</span>
                         <input value="02:00 Hrs" name="finishedIn" class=" pl-2  rounded-md w-20">
                     </div>
                 </div>   
@@ -197,25 +197,25 @@
                 </div>
                 <div class="flex">
                 <div class="border2dotgray border2dotgray2"></div>
-                    <img src="../image/Midprior.png" alt="tick" class="w-4 h-4 mt-2">
+                    <img src="../image/low.png" alt="tick" class="w-4 h-4 mt-2">
                     <p class="pl-2 mt-1">Low Priority</p>
                     <img src="../image/delete.png" alt="delete" class="w-4 h-4 ml-12 mt-2">
                 </div>
             </div>
             </div>
         </div> 
-        <div class="lg:hidden font-sans bg-white h-36 mt-3 overflow-scroll pl-4 rounded-lg w-[75%] ml-14">   
+        <div class="lg:hidden font-sans bg-white h-36 mt-3 overflow-scroll pl-4 rounded-lg w-[75%] ml-14 md:ml-24">   
             <div class="mb-2 mt-3 mb-2 border-b border-dashed border-gray-500">
                 <div class="flex mb-2">
                     <img class="w-4 h-4 mt-1 mr-2" src="../image/taskTodo.png">
                     <h3 class="">Buy System Hardware My Own</h3> 
-                    <img src="../image/edit.png" alt="pencil" class="w-4 h-4 ml-10 mt-1">
+                    <img src="../image/edit.png" alt="pencil" class="hidden w-4 h-4 ml-10 mt-1">
                 </div>
                 <span class=""><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
                 <div class="flex">
-                    <img class="w-5 h-5 mt-1" src="../image/Midprior.png" alt="taskcomp">
-                    <div class="pl-2 mt-0.5 h-6 pr-2 text-pink-500">#Development</div>
-                    <div class="flex mt-1 mb-2">
+                    <img class="w-5 h-5 mt-1" src="../image/low.png" alt="taskcomp">
+                    <div class="pl-2 mt-0.5 h-6 pr-2 text-pink-500">#Personal</div>
+                    <div class="flex mt-1 mb-2 md:ml-72">
                         <span class="ml-4">*Finished in:</span>
                         <input value="02:00 Hrs" name="finishedIn" class=" pl-2  rounded-md w-20">
                     </div>
@@ -234,25 +234,25 @@
                 </div>
                 <div class="flex">
                 <div class="border2dotgray border2dotgray2"></div>
-                    <img src="../image/Midprior.png" alt="tick" class="w-4 h-4 mt-2">
+                    <img src="../image/low.png" alt="tick" class="w-4 h-4 mt-2">
                     <p class="pl-2 mt-1">Low Priority</p>
                     <img src="../image/delete.png" alt="delete" class="w-4 h-4 ml-12 mt-2">
                 </div>
             </div>
             </div>
         </div> 
-        <div class="lg:hidden font-sans bg-white h-36 mt-3 overflow-scroll pl-4 rounded-lg w-[75%] ml-14">   
+        <div class="lg:hidden font-sans bg-white h-36 mt-3 overflow-scroll pl-4 rounded-lg w-[75%] ml-14 md:ml-24">   
             <div class="mb-2 mt-3 mb-2 border-b border-dashed border-gray-500">
                 <div class="flex mb-2">
                     <img class="w-4 h-4 mt-1 mr-2" src="../image/taskTodo.png">
                     <h3 class="">App Design API User Case Work</h3> 
-                    <img src="../image/edit.png" alt="pencil" class="w-4 h-4 ml-10 mt-1">
+                    <img src="../image/edit.png" alt="pencil" class="hidden w-4 h-4 ml-10 mt-1">
                 </div>
                 <span class=""><s>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem quis vel eum eligendi cum ut ullam praesentium perferendis, recusandae quae neque dolor reprehenderit commodi nulla repellendus tenetur ipsa placeat!</s></span>
                 <div class="flex">
                     <img class="w-5 h-5 mt-1" src="../image/Midprior.png" alt="taskcomp">
                     <div class="pl-2 mt-0.5 h-6 pr-2 text-pink-500">#Development</div>
-                    <div class="flex mt-1 mb-2">
+                    <div class="flex mt-1 mb-2 md:ml-64">
                         <span class="ml-4">*Finished in:</span>
                         <input value="02:00 Hrs" name="finishedIn" class=" pl-2  rounded-md w-20">
                     </div>
@@ -284,3 +284,5 @@
             <p class="text-xs lg:text-base text-center mt-2">&copy; 2022,Alpha Bussiness Solutions Pvt Ltd.All Rights Reserved</p>
         </div>
     </footer>
+</body>
+</html>
